@@ -29,26 +29,51 @@ def home():
             print('### SÓ PERMITIDO QUE VOCÊ ESCOLHA DE 1 A 5.')
 
         if tipo == 1:
-            num1 = int(input('# Informe um número: '))
-            num2 = int(input('# Informe um número: '))
-            print(f'### Resultado: {num1 + num2}')
-        elif tipo == 2:
-            num1 = int(input('# Informe um número: '))
-            num2 = int(input('# Informe um número: '))
-            print(f'### Resultado: {num1 - num2}')
-        elif tipo == 3:
-            num1 = int(input('# Informe um número: '))
-            num2 = int(input('# Informe um número: '))
-            print(f'### Resultado: {num1 * num2}')
-        elif tipo == 4:
-            num1 = int(input('# Informe um número: '))
-            num2 = int(input('# Informe um número: '))
-            if num2 == 0:
-                print('### NÃO É POSSÍVEL DIVIDIR POR 0')
+            num1 = input('# Informe um número: ')
+            num2 = input('# Informe um número: ')
+            if num1.isnumeric() and num2.isnumeric():
+                num1 = int(num1)
+                num2 = int(num2)
+                print(f'### Resultado: {num1 + num2}')
             else:
-                print(f'### Resultado: {num1 / num2}')
+                print('### É NECESSÁRIO QUE SEJA UM NÚMERO')
+        elif tipo == 2:
+            num1 = input('# Informe um número: ')
+            num2 = input('# Informe um número: ')
+            if num1.isnumeric() and num2.isnumeric():
+                num1 = int(num1)
+                num2 = int(num2)
+                print(f'### Resultado: {num1 + num2}')
+            else:
+                print('### É NECESSÁRIO QUE SEJA UM NÚMERO')
+        elif tipo == 3:
+            num1 = input('# Informe um número: ')
+            num2 = input('# Informe um número: ')
+            if num1.isnumeric() and num2.isnumeric():
+                num1 = int(num1)
+                num2 = int(num2)
+                print(f'### Resultado: {num1 + num2}')
+            else:
+                print('### É NECESSÁRIO QUE SEJA UM NÚMERO')
+        elif tipo == 4:
+            num1 = input('# Informe um número: ')
+            num2 = input('# Informe um número: ')
+            if num1.isnumeric() and num2.isnumeric():
+                num1 = int(num1)
+                num2 = int(num2)
+                if num2 == 0:
+                    print('### NÃO É POSSÍVEL DIVIDIR POR 0')
+                else:
+                    print(f'### Resultado: {num1 / num2}')
+            else:
+                print('### É NECESSÁRIO QUE SEJA UM NÚMERO')
         elif tipo == 5:
-            num1 = int(input('# Informe um número: '))
-            num2 = int(input('# Informe um número: '))
-            print(f'### Resultado: {num1 ** num2}')
+            num1 = input('# Informe um número: ')
+            num2 = input('# Informe um número: ')
+            if num1.isnumeric() and num2.isnumeric():
+                num1 = int(num1)
+                num2 = int(num2)
+                print(f'### Resultado: {num1 + num2}')
+            else:
+                print('### É NECESSÁRIO QUE SEJA UM NÚMERO')
 home()
