@@ -43,7 +43,7 @@ def home():
             if num1.isnumeric() and num2.isnumeric():
                 num1 = int(num1)
                 num2 = int(num2)
-                print(f'### Resultado: {num1 + num2}')
+                print(f'### Resultado: {num1 - num2}')
             else:
                 print('### É NECESSÁRIO QUE SEJA UM NÚMERO')
         elif tipo == 3:
@@ -52,7 +52,7 @@ def home():
             if num1.isnumeric() and num2.isnumeric():
                 num1 = int(num1)
                 num2 = int(num2)
-                print(f'### Resultado: {num1 + num2}')
+                print(f'### Resultado: {num1 * num2}')
             else:
                 print('### É NECESSÁRIO QUE SEJA UM NÚMERO')
         elif tipo == 4:
@@ -73,7 +73,7 @@ def home():
             if num1.isnumeric() and num2.isnumeric():
                 num1 = int(num1)
                 num2 = int(num2)
-                print(f'### Resultado: {num1 + num2}')
+                print(f'### Resultado: {num1 ** num2}')
             else:
                 print('### É NECESSÁRIO QUE SEJA UM NÚMERO')
 home()
